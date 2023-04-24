@@ -1,0 +1,58 @@
+.about_us{
+	max-width: 1416px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+.bg_about_us{
+	background: url(../images/bg_2.png) no-repeat left top,url(../images/bg_3.png) no-repeat right 700px;
+}
+.about_us_title{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 46px;
+	color: #FF571F;
+	font-weight: bold;
+	font-family: Montserrat-Bold;
+}
+.about_us_content p{
+	/* margin-top: 30px; */
+}
+.about_us_image{
+	max-width: 912px;
+	margin:30px auto 0 ;
+}
+.about_us_image img{
+	width: 100%;
+	border-radius: 20px;
+}
+.about_us_img2{
+	display: none;
+}
+.ardibook_advantages{
+	padding: 0 !important;
+}
+.shop_info{
+	/* display: none; */
+}
+@media(max-width:768px){
+	.ardibook_advantages_slider,.where_find_slider{
+		margin: 0 -16px 0 0 !important;
+	}
+}
+@media(max-width:480px){
+	.about_us_title{
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.about_us_content p{
+		margin-top:20px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.about_us_img1{
+		display: none;
+	}
+	.about_us_img2{
+		display: inline;
+	}
+}

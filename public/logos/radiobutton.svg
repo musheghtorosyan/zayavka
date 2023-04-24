@@ -1,0 +1,14 @@
+<svg id="radio_button" data-name="radio button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_149442" data-name="Rectangle 149442" width="24" height="24" transform="translate(-2592 -13464)" fill="#c2c2c2"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_262" data-name="Mask Group 262" transform="translate(2592 13464)" clip-path="url(#clip-path)">
+    <g id="radio-on-button" transform="translate(-2592 -13463)">
+      <g id="radio-button-on" transform="translate(4 2)">
+        <path id="Path_10398" data-name="Path 10398" d="M8.872,0a8.872,8.872,0,1,0,8.872,8.872A8.9,8.9,0,0,0,8.872,0Zm0,15.97a7.1,7.1,0,1,1,7.1-7.1A7.119,7.119,0,0,1,8.872,15.97Z" fill="#c2c2c2"/>
+      </g>
+    </g>
+  </g>
+</svg>

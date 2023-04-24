@@ -1,0 +1,110 @@
+-------------------- 37. preloader
+-------------------- 40. left box@ include ov sarqel
+-------------------- 42. favorit chka
+-------------------- 22. Новости - ej
+-------------------- 23. Новости - front
+-------------------- 25. Новости - single
+-------------------- 24. Новости - Nova
+******************** 28. Новости - search
+******************** 35. Акции - search
+******************** 27. Новости - filter
+1. Заявки - ej
+2. Заявки - front
+3. Заявки - Nova
+4. Заявки - single
+5. Заявки - pageing
+6. Заявки - filter
+7. Заявки - search
+8. Производители - ej
+9. Производители - front
+10. Производители - Nova
+11. Производители - single
+12. Производители - pageing
+13. Производители - filter
+14. Производители - search
+15. Товары - ej
+16. Товары - front
+17. Товары - Nova
+18. Товары - single
+19. Товары - pageing
+20. Товары - filter
+21. Товары - search
+26. Новости - pageing
+29. Акции - ej
+30. Акции - front
+31. Акции - Nova
+32. Акции - single
+33. Акции - pageing
+34. Акции - filter
+36. kategoreaner avelacnel
+41. zayavki proizvodeitel erevum a bayc piti grancven nor tesnen
+43. notifications ka
+44. email gna
+45. proizvoditel price list karoxana qci
+46. manager, torg. org - logo, diller, certificate
+47. manager@ - rekvizitner tarber kampanianeri
+48. manager - filter type multiple
+49. noter@ u emailer@ proizvoditelin categoreayov
+50. reyting, otziv
+51. grancvelu maser@ dzel
+52. infoi edite i functional userneri
+53. Заявки - admin
+54. Производители - admin
+55. Товары - admin
+56. Новости - admin
+57. Акции - admin
+38. qcel server
+39. server qceluc reclamner@ dzel
+58. mobile menui mej ejer@ avelacnel
+
+10/58
+
+-----------------------------------------------------------------
+
+reg.ru
+harut.bznuni@gmail.com
+Zayavka!2022
+
+--------------------------------------------------------------
+Website:
+https://zayavka-rossia.ru
+--------------------------------------------------------------
+Admin:
+https://zayavka-rossia.ru/nova
+zayavka.rossia@yandex.ru
+12345678
+--------------------------------------------------------------
+Gmail:
+zayavka.rossia@gmail.com
+R909Zayavka
+--------------------------------------------------------------
+Google Analytics
+https://analytics.google.com/
+zayavka.rossia@gmail.com
+R909Zayavka
+--------------------------------------------------------------
+Yandex mail:
+zayavka.rossia@yandex.ru
+R909Zayavka
+--------------------------------------------------------------
+Yandex metrika:
+https://metrika.yandex.ru/
+zayavka.rossia@yandex.ru
+R909Zayavka
+
+--------------------------------------------------------------
+Inch karas lracnes arden:
+1. О нас
+2. Нашы преимущества
+3. ЧаВО
+4. kategoria subcat exsubcat lcnel
+5. slider@ arajin eji
+6. otzivner@
+7. mail heraxos
+8. tovarneri 3 bajin entabajinner@
+
+--------------------------------------------------------------
+
+https://www.zol.ru/
+https://xn--g1abdcwihado2k.xn--p1ai/russia/manufacturers/produkty_pitaniia
+https://productcenter.ru/
