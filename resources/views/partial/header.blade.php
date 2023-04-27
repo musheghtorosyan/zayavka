@@ -63,7 +63,7 @@
 						<li><a href="{{route('companies',['locale' => app()->getLocale()])}}" class ="header_submenu">Производители</a></li>
 						<li><a href="{{route('products',['locale' => app()->getLocale()])}}" class ="header_submenu">Товары</a></li>
 						<li><a href="{{route('catalogue',['locale' => app()->getLocale()])}}" class ="header_submenu">Новости</a></li>
-						<li><a href="{{route('companies',['locale' => app()->getLocale()])}}" class ="header_submenu">Акции</a></li>
+						<li><a href="{{route('stock',['locale' => app()->getLocale()])}}" class ="header_submenu">Акции</a></li>
 						<li><a href="{{route('faq',['locale' => app()->getLocale()])}}" class ="header_submenu">{{  __('messages.footer1') }}</a></li>
 						<li><a href="{{route('about_us',['locale' => app()->getLocale()])}}" class ="header_submenu">{{  __('messages.menu3') }}</a></li>
 						<li><a href="{{route('contacts',['locale' => app()->getLocale()])}}" class ="header_submenu">{{  __('messages.menu4') }}</a></li>

@@ -25,6 +25,9 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => 'en|hy|ru']], func
     Route::get('/products', 'App\Http\Controllers\MainController@products')->name('products');
     Route::get('/product_single/{id}', 'App\Http\Controllers\MainController@product_single')->name('product_single');
 
+    Route::get('/stock', 'App\Http\Controllers\MainController@stock')->name('stock');
+    Route::get('/stock_single/{id}', 'App\Http\Controllers\MainController@stock_single')->name('stock_single');
+
     Route::get('/sign_in', 'App\Http\Controllers\MainController@sign_in')->name('sign_in');
     Route::get('/sign_up', 'App\Http\Controllers\MainController@sign_up')->name('sign_up');
     Route::get('/profile_profile', 'App\Http\Controllers\MainController@profile_profile')->name('profile_profile');

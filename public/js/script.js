@@ -30,6 +30,8 @@ window.addEventListener("scroll", () => {
 $('.act').click(function(){
   $('.act').removeClass('act2');
   $(this).addClass('act2');
+  var t = $(this).attr('type');
+  $('#usertype').val(t);
 });
 
 

@@ -11,6 +11,7 @@ use App\Models\Product;
 use App\Models\Privacy;
 use App\Models\Block;
 use App\Models\Add;
+use App\Models\Stock;
 use App\Models\Term;
 use App\Models\Contacttext;
 use App\Models\Subscribe;
@@ -121,6 +122,45 @@ class MainController extends Controller
         $reclame = Add::get();
         $ct = Contacttext::get()->first();
         return view('catalogue_single', compact('l','ct','product','products','reclame'));
+    }
+
+
+    public function stock(){
+        $l = app()->getLocale();
+        $ct = Contacttext::get()->first();
+        // $products = Product::get();
+        if(Session::has('searchResult')){ $searchResult = Session::get("searchResult"); } else { $searchResult = ''; }
+        if(Session::has('itemsPerPage')){ $itemsPerPage = intval(Session::get("itemsPerPage")); } else { $itemsPerPage = 15; }
+        if(Session::has('thisPage')){ $thisPage = intval(Session::get("thisPage")); } else { $thisPage = 1; }
+        $itemsSkip = ($thisPage-1)*$itemsPerPage;
+        $reclame = Add::get();
+        $suborders = Stock::where('id','!=',"phantom");
+        if($searchResult!=''){
+            $suborders ->where(function ($q) {
+                if(Session::has('searchResult')){ $searchResult = Session::get("searchResult"); } else { $searchResult = ''; }
+                $cols = ['ru_title','ru_desc'];
+                foreach($cols as $col => $val)
+                {
+                    $q->orWhere($val, 'LIKE', "%$searchResult%");
+                }
+            });
+        }
+        $products = $suborders->get()->skip($itemsSkip)->take($itemsPerPage);
+        $allItems = $suborders->count();
+        $pageCount = ceil($allItems / $itemsPerPage);
+        
+        return view('stock', compact('l','ct','products','itemsPerPage','pageCount','thisPage','searchResult','allItems','reclame'));
+    }
+    public function stock_single($lang,$id){
+        if(Stock::where('id',$id)->get()->count()==0){
+            abort(404);
+        }
+        $products = Stock::get();
+        $product = Stock::where('id',$id)->get()->first();
+        $l = app()->getLocale();
+        $reclame = Add::get();
+        $ct = Contacttext::get()->first();
+        return view('stock_single', compact('l','ct','product','products','reclame'));
     }
 
 

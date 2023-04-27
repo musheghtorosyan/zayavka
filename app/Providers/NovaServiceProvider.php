@@ -138,6 +138,13 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     ]),
                     TopLevelResource::make([
                         'expanded' => false,
+                        'label' => 'Акции',
+                        'resources' => [
+                            \App\Nova\Stock::class,
+                        ]
+                    ]),
+                    TopLevelResource::make([
+                        'expanded' => false,
                         'label' => 'Реклама',
                         'resources' => [
                             \App\Nova\Addfile::class,

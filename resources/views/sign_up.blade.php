@@ -35,7 +35,7 @@
 							<div class="errorMessage">{{  __('messages.error6') }}</div><br>
 						@endif
 						
-	
+						<input id='usertype' name="type" type="hidden" class="input" value='manager'>
       					<br/>
 						@if($errors->any() && $errors->first()[10]==1)
 							<div class="errorMessage">{{  __('messages.error7') }}</div><br>
@@ -66,9 +66,9 @@
 				</div>
 				<div class="right_block">
 					<h2 style='text-align:center'>Тип аккаунта</h2><br>
-					<a class='act act2' href="#"> Менеджер </a>
-					<a class='act' href="#"> Торгующая организация </a>
-					<a class='act' href="#"> Производитель </a>
+					<a type='manager' class='act act2' href="#"> Менеджер </a>
+					<a type='organization' class='act' href="#"> Торгующая организация </a>
+					<a type='company' class='act' href="#"> Производитель </a>
 				</div>
 			</div>
 		</div>
