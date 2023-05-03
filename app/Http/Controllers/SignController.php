@@ -29,6 +29,7 @@ class SignController extends Controller
     public function reg(Request $request){
 
 
+        $type = $request->input('type');
         $name = $request->input('name');
         $surname = $request->input('surname');
         $email = $request->input('email');
@@ -44,7 +45,11 @@ class SignController extends Controller
         $v6 = 0;
         $cc = Account::where('email',$email)->get()->count();
         if(mb_strlen($name, "utf8")<2 || mb_strlen($name, "utf8")>21){ $v1 = 1; }
-        if(mb_strlen($surname, "utf8")<2 || mb_strlen($surname, "utf8")>21){ $v2 = 1; }
+        if($type=="manager"){
+            if(mb_strlen($surname, "utf8")<2 || mb_strlen($surname, "utf8")>21){ $v2 = 1; }
+        } else {
+            $surname = "";
+        }
         if(!filter_var($email,FILTER_VALIDATE_EMAIL) || $cc>0){ $v3 = 1; }
         if(strlen($phone)<4 || strlen($phone)>16 || !is_numeric($phone)){ $v4 = 1; }
         if(mb_strlen($psw, "utf8")<8 || mb_strlen($psw, "utf8")>41 || $psw!=$repsw){ $v5 = 1; }
@@ -68,6 +73,7 @@ class SignController extends Controller
             $account->email = $email;
             $account->phone = $phone;
             $account->password = $psw;
+            $account->type = $type;
             $account->save();
 
             $user = Account::where('email',$email)->where('password',$psw)->get()->first();

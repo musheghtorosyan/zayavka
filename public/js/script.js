@@ -32,6 +32,13 @@ $('.act').click(function(){
   $(this).addClass('act2');
   var t = $(this).attr('type');
   $('#usertype').val(t);
+  if(t=="manager"){
+    $('.hidefrom').show();
+    $('.changeplace').attr('placeholder','Имя');
+  } else {
+    $('.hidefrom').hide();
+    $('.changeplace').attr('placeholder','Название организации');
+  }
 });
 
 

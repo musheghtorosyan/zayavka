@@ -178,7 +178,7 @@ class MainController extends Controller
         if(Session::has('itemsPerPage')){ $itemsPerPage = intval(Session::get("itemsPerPage")); } else { $itemsPerPage = 15; }
         if(Session::has('thisPage')){ $thisPage = intval(Session::get("thisPage")); } else { $thisPage = 1; }
         $itemsSkip = ($thisPage-1)*$itemsPerPage;
-        $suborders = Product::where('id','!=',"phantom");
+        $suborders = Account::where('type',"=","company");
         if($searchResult!=''){
             $suborders ->where(function ($q) {
                 if(Session::has('searchResult')){ $searchResult = Session::get("searchResult"); } else { $searchResult = ''; }
@@ -199,9 +199,12 @@ class MainController extends Controller
         $sel3 = Subcategorie::get();
         $sel4 = Exsubcategorie::get();
         $reclame = Add::get();
-
+        // dd($products);
         return view('companies', compact('l','ct','products','itemsPerPage','pageCount','thisPage','searchResult','allItems','sel1','sel2','sel3','sel4','reclame'));
     }
+
+
+
     public function company_single($lang,$id){
         if(Product::where('id',$id)->get()->count()==0){
             abort(404);

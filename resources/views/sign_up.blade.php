@@ -12,11 +12,11 @@
 				<div class="left_block">
 					<form action="reg" method="post">
 						@csrf
-						<input name="name" value="{{ old('name') }}" type="text" class="input" placeholder="{{  __('messages.account55') }}">
+						<input name="name" value="{{ old('name') }}" type="text" class="input changeplace" placeholder="{{  __('messages.account55') }}">
 						@if($errors->any() && $errors->first()[0]==1)
 							<div class="errorMessage">{{  __('messages.error2') }}</div><br>
 						@endif
-						<input name="surname" value="{{ old('surname') }}" type="text" class="input" placeholder="{{  __('messages.account56') }}">
+						<input name="surname" value="{{ old('surname') }}" type="text" class="input hidefrom" placeholder="{{  __('messages.account56') }}">
 						@if($errors->any() && $errors->first()[2]==1)
 							<div class="errorMessage">{{  __('messages.error3') }}</div><br>
 						@endif
