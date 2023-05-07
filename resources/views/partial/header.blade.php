@@ -116,41 +116,50 @@
 		</div>
 		<div class="burger_nav">
 			<ul>
-				<li><a href="{{route('catalogue',['locale' => app()->getLocale()])}}"> {{  __('messages.menu1') }}</a></li>
+				<!-- <li><a href="{{route('catalogue',['locale' => app()->getLocale()])}}"> {{  __('messages.menu1') }}</a></li>
 				<li><a href="{{route('about_us',['locale' => app()->getLocale()])}}"> {{  __('messages.menu3') }}</a></li>
-				<li><a href="{{route('contacts',['locale' => app()->getLocale()])}}"> {{  __('messages.menu4') }}</a></li>
+				<li><a href="{{route('contacts',['locale' => app()->getLocale()])}}"> {{  __('messages.menu4') }}</a></li> -->
+
+				<li><a href="{{route('companies',['locale' => app()->getLocale()])}}" class ="header_submenu">Заявки</a></li>
+				<li><a href="{{route('companies',['locale' => app()->getLocale()])}}" class ="header_submenu">Производители</a></li>
+				<li><a href="{{route('products',['locale' => app()->getLocale()])}}" class ="header_submenu">Товары</a></li>
+				<li><a href="{{route('catalogue',['locale' => app()->getLocale()])}}" class ="header_submenu">Новости</a></li>
+				<li><a href="{{route('stock',['locale' => app()->getLocale()])}}" class ="header_submenu">Акции</a></li>
+				<li><a href="{{route('faq',['locale' => app()->getLocale()])}}" class ="header_submenu">{{  __('messages.footer1') }}</a></li>
+				<li><a href="{{route('about_us',['locale' => app()->getLocale()])}}" class ="header_submenu">{{  __('messages.menu3') }}</a></li>
+				<li><a href="{{route('contacts',['locale' => app()->getLocale()])}}" class ="header_submenu">{{  __('messages.menu4') }}</a></li>
 			</ul>
 		</div>
-		<div class="burger_lang">
+		<!-- <div class="burger_lang">
 			<form action="">
 				<div class="mob_language_block">
-				<?php if(app()->getLocale() != 'ru') { ?>
+				< ?php if(app()->getLocale() != 'ru') { ?>
 					<div class="mob_language active_header">
 						<a href="/lang/ru">
 							<img src="/logos/ru.png" alt="">
 							<span>RU</span>
 						</a>
 					</div>
-					<?php } ?>
-					<?php if(app()->getLocale() != 'hy') { ?>
+					< ?php } ?>
+					< ?php if(app()->getLocale() != 'hy') { ?>
 					<div class="mob_language">
 						<a href="/lang/hy">
 							<img src="/logos/am.png" alt="">
 							<span>AM</span>
 						</a>
 					</div>
-					<?php } ?>
-					<?php if(app()->getLocale() != 'en') { ?>
+					< ?php } ?>
+					< ?php if(app()->getLocale() != 'en') { ?>
 					<div class="mob_language">
 						<a href="/lang/en">
 							<img src="/logos/en.png" alt="">
 							<span>EN</span>
 						</a>
 					</div>
-					<?php } ?>
+					< ?php } ?>
 				</div>
 			</form>
-		</div>
+		</div> -->
 		</div>
 	</div>
 	

@@ -11,6 +11,8 @@
 -------------------- 31. Акции - Nova
 -------------------- 32. Акции - single
 -------------------- 33. Акции - pageing
+-------------------- 54. Производители - admin
+-------------------- 58. mobile menui mej ejer@ avelacnel
 ******************** 34. Акции - filter
 ******************** 28. Новости - search
 ******************** 35. Акции - search
@@ -49,15 +51,14 @@
 51. grancvelu maser@ dzel
 52. infoi edite i functional userneri
 53. Заявки - admin
-54. Производители - admin
 55. Товары - admin
 56. Новости - admin
 57. Акции - admin
 38. qcel server
 39. server qceluc reclamner@ dzel
-58. mobile menui mej ejer@ avelacnel
+59. proizvoditeli eji mobile
 
-17/58
+19/59
 
 -----------------------------------------------------------------
 
@@ -108,3 +109,14 @@ Inch karas lracnes arden:
 https://www.zol.ru/
 https://xn--g1abdcwihado2k.xn--p1ai/russia/manufacturers/produkty_pitaniia
 https://productcenter.ru/
+
+
+
+
+Harcer
+1. Menak proizvoditelnern en otziv unenalu?
+2. Otziv@ menak astxera linelu te text el piti gren?
+3. Ova karoxanum toziv toxni?
+4. Erevuma ova otziv@ toxel?
+5. Otziv toxox@ karuma heto poxi ira grac@ u gnahatakan@?
+6. Grancveluc heto inch vor dzev chi hastatvum che ejer@ admini koxmic, miangamic karum en mtnen ogtagorcen?
